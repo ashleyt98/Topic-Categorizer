@@ -20,6 +20,10 @@ elif ans == "2":
         result = ml.classifiers.classify(model_id, data) #This will put all the information in results
         
         counts = Counter(chain.from_iterable(i.keys() for i in result.body[0]['classifications'])) #This will count how many tags there are
+        
+        if len(result.body[0]['classifications']) == 0: #If the tweet doesn't belong in any categories the system will exit
+            sys.exit("The tweet did not match any exisiting topics")
+        
         for key, value in counts.items():
             tag_name = value #This will assign the amount of tags used for the tweet to tag_name
             break
