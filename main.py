@@ -5,6 +5,12 @@ from random import randrange
 import sys
 import tweepy
 
+"""
+References:
+MonkeyLearn API for classifiers: https://monkeylearn.com/api/v3/#classifier-api
+Extracting tweets from twitter: https://www.geeksforgeeks.org/extraction-of-tweets-using-tweepy/
+"""
+
 consumer_key = "xSA6hRSv03jI0AegAB0210s2u"
 consumer_secret = "59n2PG84kEedk8WBJ1s5OleTiRHWeG6V6VUw973Al47X0BEuFQ"
 access_key = "3224628037-HO7a4r1CDsBlR1SJt3I5JpV1ysm2tXfq0CmQMMn"
